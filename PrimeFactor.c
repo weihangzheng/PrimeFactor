@@ -9,7 +9,7 @@ int main(int argc, char **argv)
 	printf("Enter a positive integer >= 2 to prime factorize: ");
     scanf("%d", &num);
     
-    //find all potential prime factors
+    //count the number of prime factors
     int count = 0;
     for(int i = 2; i <= num; i++){
         if(num % i == 0){

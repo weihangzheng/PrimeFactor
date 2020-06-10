@@ -28,6 +28,7 @@ int main(int argc, char **argv)
     int *array = malloc(2*count*sizeof(int));
     for(int i = 0; i < 2*count; i++)
         array[i] = 0;
+    
     int index1 = 0;
     for(int i = 2; i <= num; i++){
         if(num % i == 0){
@@ -57,7 +58,7 @@ int main(int argc, char **argv)
     //print prime factorization
     for(int i = 0; i < count-1; i++)
         printf("%d^%d x ", array[i], array[i + count]);
-    printf("%d^%d\n", array[count-1], array[2*count - 1]);
-        
+    printf("%d^%d\n\n", array[count-1], array[2*count - 1]);
+    free(array);
     main(argc, argv);
 }
